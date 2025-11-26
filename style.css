@@ -154,3 +154,29 @@ li {
   margin-right: 5;
   font-family: "Comfortaa", sans-serif;
 }
+
+@media (max-width: 800px) {
+
+  .header{
+    width: 100%;
+  }
+
+  .container{
+    width: 100%;
+  }
+
+  .content{
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .sidebar{
+    height: auto;
+  }
+
+  .box{
+    height: auto;
+  }
+
+
+}
