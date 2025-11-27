@@ -15,6 +15,7 @@ h1 {
 body {
   background-image: url("wall.jpg");
   background-size: cover;
+  background-attachment: fixed;
   font-family: "Comfortaa", sans-serif;
 }
 
@@ -43,8 +44,8 @@ li {
   display: flex;
   margin-left: 25px;
   margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .header {
@@ -57,7 +58,7 @@ li {
   color: rgb(215, 215, 250);
   justify-content: space-between;
   background-color: #332d58;
-  height: 250;
+  height: auto;
   border-radius: 10px;
 }
 
@@ -77,12 +78,11 @@ li {
   display: flex;
   background-color: #332d58;
   flex-grow: 1;
-  max-height: 65;
-  overflow: hidden;
   border-radius: 10px;
   border-top: thin;
   border-top-style: solid;
   border-top-color: black;
+  height: auto;
 }
 
 .button {
@@ -92,9 +92,11 @@ li {
   flex-grow: 1;
   width: 20%;
   color: rgb(215, 215, 250);
-  font-size: 25px;
-  transition: background-color 0.2s;
+  font-size: 30px;
+  transition: font-size 0.2s ease-out, background 0.2s ease-out;
+
   border-radius: 10px;
+  height: 60px;
 }
 
 .button:hover {
@@ -102,15 +104,16 @@ li {
   justify-content: center;
   display: flex;
   flex-grow: 1;
-  width: 20%;
   color: rgb(215, 215, 250);
-  font-size: 25px;
+  font-size: 35px;
   border-left-style: solid;
   border-right-style: solid;
   border-top-style: solid;
   border-width: 2;
   border-color: #1b1b4bc7;
   background-color: #1b1b4bc7;
+  transition: font-size 0.2s ease-in, background 0.2s ease-in;
+
 }
 
 .box {
@@ -151,6 +154,14 @@ li {
 
   .header{
     width: 100%;
+    height: auto;
+  }
+
+
+  .button{
+    font-size: 30;
+    width: 100%;
+    height: 70;
   }
 
   .container{
@@ -159,6 +170,7 @@ li {
 
   .content{
     width: 100%;
+    font-size: 25;
   }
 
   .sidebar{
